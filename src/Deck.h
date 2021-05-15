@@ -1,15 +1,16 @@
 #pragma once
 
 #include <vector>
-#include "
+#include "Card.h"
 
 class Deck {
     public:
         Deck();
-        void shuffle() const;
-        void deal() const;
+        std::vector<Card> getCards() const {return cards;};
+        void shuffle();
+        Card deal();
 
     private:
-        vector<Card> cards;
+        std::vector<Card> cards{};
 
 };

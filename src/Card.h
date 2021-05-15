@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 class Card {
     public:
         Card(char r, char s);
